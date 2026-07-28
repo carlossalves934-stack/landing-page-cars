@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Performance - Estética Automotiva</title>
+  
+  <!-- Script necessário para renderizar o modelo 3D -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header>
+    <div class="logo">Apex <span>Performance</span></div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section com o Modelo 3D -->
+  <section class="hero">
+    
+    <!-- Container do Carro 3D -->
+    <div class="model-container">
+      <model-viewer 
+        src="suv.glb" 
+        camera-controls 
+        auto-rotate
+        shadow-intensity="1"
+        alt="Modelo 3D SUV">
+      </model-viewer>
+    </div>
+
+    <h1>Transforme o visual do seu veículo</h1>
+    <p>Estética automotiva de alta performance, proteção de pintura e instalação de acessórios premium.</p>
+    <a href="#contato" class="btn">Agendar Orçamento</a>
+  </section>
+
+  <!-- Seção de Serviços -->
+  <section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    
+    <div class="cards-container">
+      <div class="card">
+        <h3>Proteção de Pintura (PPF)</h3>
+        <p>Película de alta resistência contra arranhões, pedras de estrada e raios UV para manter a pintura nova.</p>
+      </div>
+
+      <div class="card">
+        <h3>Polimento & Vitrificação</h3>
+        <p>Restauração do brilho original e aplicação de camada cerâmica com hidrofobia máxima.</p>
+      </div>
+
+      <div class="card">
+        <h3>Instalação de Multimídia</h3>
+        <p>Upgrade de telas, som de alta fidelidade e integração completa com CarPlay e Android Auto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="about">
+    <h2>Por que escolher a Apex?</h2>
+    <p>Utilizamos os melhores produtos do mercado mundial e técnicas avançadas para garantir a proteção e o brilho que seu carro merece.</p>
+    
+    <div class="stats">
+      <div class="stat-item">
+        <h3>+500</h3>
+        <p>Carros Atendidos</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Garantia de Qualidade</p>
+      </div>
+      <div class="stat-item">
+        <h3>5★</h3>
+        <p>Avaliação dos Clientes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé / Contato -->
+  <footer id="contato">
+    <div class="footer-content">
+      <h3>Apex Performance</h3>
+      <p>Agende seu horário ou tire suas dúvidas direto pelo WhatsApp.</p>
+      <a href="https://wa.me/" target="_blank" class="btn btn-whatsapp">Falar no WhatsApp</a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Apex Performance. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Reset básico para remover margens padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* Fundo escuro/moderno */
+  color: #f8fafc; /* Texto claro */
+  line-height: 1.6;
+}
+
+/* Estilização do Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #38bdf8; /* Azul destaque */
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  max-width: 800px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* Botão de Destaque */
+.btn {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px);
+}
+
+/* Seção de Serviços */
+.services {
+  padding: 60px 8%;
+  text-align: center;
+  background-color: #1e293b;
+}
+
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Grade de Cards usando Flexbox */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Para se adaptar no celular */
+}
+
+.card {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  color: #38bdf8;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Seção Sobre */
+.about {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+/* Estatísticas */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+.stat-item p {
+  color: #f8fafc;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Rodapé / Footer */
+footer {
+  background-color: #0b1120;
+  border-top: 1px solid #334155;
+  padding: 50px 8% 20px 8%;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.footer-content p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.btn-whatsapp {
+  background-color: #22c55e; /* Verde WhatsApp */
+  color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+  background-color: #16a34a;
+}
+
+.copyright {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  color: #64748b;
+  font-size: 0.85rem;
+}
