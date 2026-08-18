@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Cabeçalho / Navegação -->
   <header>
     <div class="logo">Apex <span>Performance</span></div>
@@ -68,6 +67,42 @@
       </div>
     </div>
   </section>
+
+  <!-- Seção Chamada para Orçamento -->
+<section id="calculadora" class="calc-section">
+  <div class="container">
+    <h2>Simulador de Orçamento</h2>
+    <p>Calcule uma estimativa instantânea para o seu veículo</p>
+
+    <form id="calc-form">
+      <div class="form-group">
+        <label for="car-type">1. Porte do Veículo:</label>
+        <select id="car-type">
+          <option value="1">Pequeno (Hatch)</option>
+          <option value="1.2">Médio (Sedan / Crossover)</option>
+          <option value="1.5">Grande (SUV / Pick-up)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>2. Serviços Desejados:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" class="service" value="150"> Lavagem Detalhada - R$ 150</label>
+          <label><input type="checkbox" class="service" value="350"> Higienização Interna - R$ 350</label>
+          <label><input type="checkbox" class="service" value="600"> Polimento Técnico - R$ 600</label>
+          <label><input type="checkbox" class="service" value="1200"> Vitrificação de Pintura - R$ 1200</label>
+        </div>
+      </div>
+
+      <div class="total-box">
+        <span>Valor Estimado:</span>
+        <strong id="total-price">R$ 0,00</strong>
+      </div>
+
+      <button type="button" id="whatsapp-btn" class="btn-primary">Solicitar Agendamento via WhatsApp</button>
+    </form>
+  </div>
+</section>
 
   <!-- Rodapé / Contato -->
   <footer id="contato">

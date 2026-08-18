@@ -14,12 +14,44 @@ body {
 
 /* Estilização do Cabeçalho */
 header {
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   padding: 20px 8%;
   background-color: #1e293b;
   border-bottom: 1px solid #334155;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a; /* Garante que os elementos de baixo não apareçam por trás */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adiciona um leve sombreamento ao rolar */
+}
+
+/* Estrutura interna do cabeçalho */
+header .container {
+  display: flex;
+  justify-content: space-between; /* Joga a logo para a esquerda e a nav para a direita */
+  align-items: center;            /* Alinha verticalmente no centro */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+/* Espaçamento entre os links de navegação */
+header nav {
+  display: flex;
+  gap: 20px; /* Espaço entre cada link */
+}
+
+header nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: #00a8ff; /* Destaque em azul ao passar o mouse */
 }
 
 .logo {
@@ -204,4 +236,126 @@ footer {
   border-top: 1px solid #1e293b;
   color: #64748b;
   font-size: 0.85rem;
+}
+
+/* Seção Calculadora com a paleta do site Apex */
+.calc-section {
+  padding: 60px 20px;
+  background-color: #0f172a; /* Mesma cor de fundo do site */
+  color: #f8fafc;
+  text-align: center;
+}
+
+.calc-section h2 {
+  color: #00a8ff; /* Azul da Apex */
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.calc-section p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+#calc-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #1e293b; /* Card levemente mais claro */
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid #334155;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0f172a;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  font-weight: normal;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.checkbox-group label:hover {
+  border-color: #00a8ff;
+  background-color: #131c2e;
+}
+
+.checkbox-group input[type="checkbox"] {
+  accent-color: #00a8ff;
+  width: 18px;
+  height: 18px;
+}
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #00a8ff;
+  margin: 25px 0 20px 0;
+}
+
+.total-box span {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.total-box strong {
+  color: #00a8ff;
+  font-size: 1.4rem;
+}
+
+/* Botão Verde de Destaque para o WhatsApp */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
